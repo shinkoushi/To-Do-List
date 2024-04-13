@@ -94,6 +94,9 @@ button{
 button:hover{
     opacity: 0.8;
 }
+#jumlah{
+  color: #ff686b;  
+}
 #info{
     text-align: center;
     color: #555;
