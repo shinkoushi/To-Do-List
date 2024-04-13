@@ -180,8 +180,8 @@ ul li span:hover {
     position: relative;
     display: flex;
     align-items: center;
-    font-weight: bold;
-    
+    font-weight: 400;
+    opacity: 0.8;
 }
 
 .icon {
@@ -212,9 +212,9 @@ ul li span:hover {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
     .icon {
-        right: 240px;
+        right: 280px;
         bottom: 15px;
         font-size: 13px;
     }
@@ -231,25 +231,16 @@ ul li span:hover {
 }
 @media (max-width: 440px) {
     .icon {
-        right: 240px;
+        right: 210px;
         bottom: 15px;
         font-size: 13px;
     }
 }
 
-@media (max-width: 370px) {
-    .icon {
-        right: 180px;
-        bottom: 15px;
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 380px) {
+@media (max-width: 375px) {
     .icon {
         right: 200px;
         bottom: 15px;
         font-size: 13px;
     }
 }
-
