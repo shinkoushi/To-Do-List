@@ -95,8 +95,9 @@ button:hover{
 #info{
     text-align: center;
     color: #555;
-    margin-top: 50px;
+    padding-top: 30px;
     font-style: italic;
+    margin-top: 20px;
    
 }
 #c{
@@ -157,6 +158,8 @@ ul li span:hover{
     position: relative;
     display: flex;
     align-items: center;  
+    font-weight: 400;
+    opacity: 0.8;
 }
 
 
@@ -209,6 +212,7 @@ font-size: 13px;
         right: 210px;
         bottom: 15px;
         font-size: 13px;
+       
       }
   }
   @media (max-width: 375px){
