@@ -53,7 +53,7 @@ function AddTask() {
   } else if (countLetters(li.innerHTML) > 55 && window.innerWidth <= 400) {
     icon.style.top = "15px";
 }
-  else if (countLetters(li.innerHTML) > 28 && window.innerWidth <= 380) {
+  else if (countLetters(li.innerHTML) > 25 && window.innerWidth <= 380) {
       icon.style.top = "8px";
   }else if (countLetters(li.innerHTML) > 45 && window.innerWidth <= 380) {
     icon.style.top = "15px";
@@ -89,9 +89,11 @@ listContainer.addEventListener(
       e.target.classList.toggle("checked");
       e.target.classList.toggle("coret");
       saveData();
+      showUncheckedLiCount();
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
       saveData();
+      showUncheckedLiCount();
     }
   },
   false
