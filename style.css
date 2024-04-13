@@ -204,10 +204,7 @@ ul li span:hover {
 }
 
 @media (max-width: 768px) {
-    .todo-app {
-        margin: 50px auto 20px;
-    }
-
+  
     .icon {
         right: 260px;
         bottom: 20px;
@@ -217,7 +214,7 @@ ul li span:hover {
 
 @media (max-width: 600px) {
     .icon {
-        right: 240px;
+        right: 280px;
         bottom: 15px;
         font-size: 13px;
     }
@@ -230,30 +227,17 @@ ul li span:hover {
         font-size: 13px;
     }
 
-    .todo-app h2 {
-        font-size: 24px;
-    }
-
-    .todo-app h2 img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .hari-waktu {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    #input-box {
-        padding-left: 10px;
-    }
-
-    ul li {
-        padding-left: 30px;
+   
+}
+@media (max-width: 440px) {
+    .icon {
+        right: 210px;
+        bottom: 15px;
+        font-size: 13px;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     .icon {
         right: 200px;
         bottom: 15px;
