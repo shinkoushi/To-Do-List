@@ -14,7 +14,7 @@ function AddTask() {
   if (inputBox.value == "" ) {
     Swal.fire({
       icon: "error",
-      text: "kamu belum menulis pekerjaan mu !",
+      text: "kamu belum menulis tugas mu !",
   });
 
   }else if(inputTime.value == ""){
@@ -116,5 +116,5 @@ function countUncheckedLi() {
 
 function showUncheckedLiCount() {
   const uncheckedCount = countUncheckedLi();
-  countElement.textContent = `Kamu memiliki ${uncheckedCount} tugas yang belum diselesaikan`;
+  countElement.innerHTML = `Kamu memiliki <span id="jumlah">${uncheckedCount} tugas  </span>  yang belum diselesaikan`;
 }
