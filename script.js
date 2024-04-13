@@ -42,20 +42,24 @@ function AddTask() {
     icon.classList.add('icon');
     icon.innerHTML = `<i class="fa-solid fa-calendar-days"></i>`;
 
-    
+    if (countLetters(li.innerHTML) > 35 && window.innerWidth <= 480) {
+      icon.style.top = "5px";
+  }else if(countLetters(li.innerHTML) > 60 && window.innerWidth <= 480) {
+    icon.style.top = "12px";
 
-    if (countLetters(li.innerHTML) > 35 && window.innerWidth <= 500) {
-      icon.style.top = "8px";}
-    else if (countLetters(li.innerHTML) > 30 && window.innerWidth <= 450) {
+
+   } else if (countLetters(li.innerHTML) > 30 && window.innerWidth <= 400) {
       icon.style.top = "8px";
-    }
-     else if (countLetters(li.innerHTML) > 25 && window.innerWidth <= 400) {
+  } else if (countLetters(li.innerHTML) > 55 && window.innerWidth <= 400) {
+    icon.style.top = "15px";
+}
+  else if (countLetters(li.innerHTML) > 25 && window.innerWidth <= 380) {
       icon.style.top = "8px";
-     }else if (countLetters(li.innerHTML) > 25 && window.innerWidth <= 380) {
-        icon.style.top = "8px";
-   
-     }
+  }else if (countLetters(li.innerHTML) > 45 && window.innerWidth <= 380) {
+    icon.style.top = "15px";
+  }
     span.appendChild(icon);
+
 
     let dayElement = document.createElement("p");
     dayElement.classList.add('day');
