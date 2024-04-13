@@ -35,7 +35,7 @@
     align-items: center;
     background: #edeef0;
     border-radius: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 #input-box{
     border: none;
@@ -51,13 +51,15 @@
     background-color: #edeef0 ;
     width: auto;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-bottom: 10px;
 }
 #pilih{
     color: #555;
     margin-bottom: 5px;
     font-style: italic;
+    margin-left: 8px;
+    font-size: 15px;
 }
 #day{
     background-color: #fff;
@@ -178,11 +180,6 @@ font-size: 13px;
     font-size: 15px;
 }
 
-
-
-
-
-
 .day{
     left: 10px;
     font-size: 15px;
@@ -190,6 +187,10 @@ font-size: 13px;
 .time{
     left: 8px;
     font-size: 15px;
+}
+#keterangan{
+    color: #555;
+    
 }
 
 @media (max-width: 560px) {
