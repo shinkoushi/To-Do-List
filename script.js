@@ -10,6 +10,7 @@ function AddTask() {
       icon: "error",
       text: "kamu belum menulis pekerjaan mu !",
   });
+  
   }else if(inputTime.value == ""){
     Swal.fire({
       icon: "error",
@@ -33,31 +34,29 @@ function AddTask() {
 
 
     let icon = document.createElement("i");
-    icon.classList.add('icon'); // Add a class to the icon element
+    icon.classList.add('icon'); 
     icon.innerHTML = `<i class="fa-solid fa-calendar-days"></i>`;
     span.appendChild(icon)
     
     
     let dayElement = document.createElement("p");
-    dayElement.classList.add('day'); // Add a class to the day element
+    dayElement.classList.add('day'); 
     dayElement.innerHTML = inputDay.value;
     icon.appendChild(dayElement);
     
     let timeElement = document.createElement("hp");
-    timeElement.classList.add('time'); // Add a class to the time element
+    timeElement.classList.add('time'); 
     timeElement.innerHTML = inputTime.value;
     dayElement.appendChild(timeElement)
-
-
-
-
-    
+ 
   }
   inputBox.value = "";
   inputTime.value = "";
   inputDay.value = "";
+
   info.style.display = "none"
   saveData();
+  
 }
 
 listContainer.addEventListener(
