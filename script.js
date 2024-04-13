@@ -4,6 +4,11 @@ const inputDay = document.getElementById("day");
 const listContainer = document.getElementById("list-container");
 const info = document.getElementById("info")
 
+
+function countWords(str) {
+  return str.trim().split(/\s+/).length;
+}
+
 function AddTask() {
   if (inputBox.value == "" ) {
     Swal.fire({
@@ -36,9 +41,17 @@ function AddTask() {
     let icon = document.createElement("i");
     icon.classList.add('icon'); 
     icon.innerHTML = `<i class="fa-solid fa-calendar-days"></i>`;
-    span.appendChild(icon)
     
-    
+    if (countWords(li.innerHTML) > 8 && window.innerWidth <= 600) {
+      icon.style.top = "10px";
+     
+    } else if (countWords(li.innerHTML) > 4 && window.innerWidth <= 400) {
+      icon.style.top = "8px";
+    }
+
+    span.appendChild(icon);
+
+
     let dayElement = document.createElement("p");
     dayElement.classList.add('day'); 
     dayElement.innerHTML = inputDay.value;
