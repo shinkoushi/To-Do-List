@@ -6,8 +6,8 @@ const info = document.getElementById("info")
 const countElement = document.getElementById("keterangan"); // added this line to select the countElement
 
 
-function countWords(str) {
-  return str.trim().split(/\s+/).length;
+function countLetters(str) {
+  return str.trim().replace(/[^a-zA-Z\s]/g, '').replace(/\s+/g, '').length;
 }
 
 function AddTask() {
@@ -42,16 +42,19 @@ function AddTask() {
     icon.classList.add('icon');
     icon.innerHTML = `<i class="fa-solid fa-calendar-days"></i>`;
 
-    if (countWords(li.innerHTML) > 8 && window.innerWidth <= 600) {
-      icon.style.top = "8px";
+    
 
-    }else if (countWords(li.innerHTML) > 6 && window.innerWidth <= 500) {
+    if (countLetters(li.innerHTML) > 35 && window.innerWidth <= 500) {
       icon.style.top = "8px";}
-
-     else if (countWords(li.innerHTML) > 4 && window.innerWidth <= 400) {
+    else if (countLetters(li.innerHTML) > 30 && window.innerWidth <= 450) {
       icon.style.top = "8px";
     }
-
+     else if (countLetters(li.innerHTML) > 25 && window.innerWidth <= 400) {
+      icon.style.top = "8px";
+     }else if (countLetters(li.innerHTML) > 25 && window.innerWidth <= 380) {
+        icon.style.top = "8px";
+   
+     }
     span.appendChild(icon);
 
     let dayElement = document.createElement("p");
